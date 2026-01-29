@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0b;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.top-bar {
+  padding: 10px;
+  background: #111;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+select, button {
+  padding: 6px 10px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+#field {
+  width: 1000px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  border: 2px solid #ddd;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAPAS */
+#field.futsal {
+  background-image: linear-gradient(#666, #555);
+}
+
+#field.real {
+  background-image: linear-gradient(#7a8f5a, #6d8450);
+}
+
+/* JOGADORES */
+.player {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: grab;
+}
+
+.red { background: #e53935; }
+.blue { background: #1e88e5; }
+
+/* BOLA */
+#ball {
+  position: absolute;
+  border-radius: 50%;
+  cursor: grab;
+}
+
+.ball-futsal {
+  width: 10px;
+  height: 10px;
+  background: orange;
+}
+
+.ball-real {
+  width: 14px;
+  height: 14px;
+  background: white;
+}
